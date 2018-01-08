@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.cabecera {
+  padding: 3rem 0;
+  text-align: center;
+  background-image: url("../img/header.jpeg");
+  margin-bottom: 3rem; }
+  .cabecera__titulo {
+    display: inline-block;
+    padding: 2rem 4rem;
+    font-family: "Roboto Slab", serif;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #e91e63; }
+
+.contenedor {
+  margin: 2rem auto;
+  font-family: Helvetica, Arial, sans-serif; }
+  @media screen and (min-width: 64rem) {
+    .contenedor {
+      width: 75%; } }
+  @media screen and (max-width: 63rem) {
+    .contenedor {
+      width: 90%; } }
+
+.serie {
+  margin-bottom: 3rem; }
+  .serie__imagen {
+    text-align: center; }
+    .serie__imagen__imagen {
+      max-width: 100%;
+      border-radius: 5px 5px 0 0; }
+  .serie__titulo {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #424242;
+    color: #eee;
+    border-radius: 0 0 10px 10px; }
+    .serie__titulo__titulo {
+      text-transform: uppercase; }
+  @media screen and (min-width: 64rem) {
+    .serie__esquema-info {
+      display: flex; } }
+  .serie__esquema-info__item {
+    padding: .5rem;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #424242;
+    color: #eee; }
+    @media screen and (min-width: 64rem) {
+      .serie__esquema-info__item {
+        flex: auto;
+        margin-right: 1rem; }
+        .serie__esquema-info__item:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 63rem) {
+      .serie__esquema-info__item {
+        margin-bottom: .5rem; }
+        .serie__esquema-info__item:last-child {
+          margin-bottom: 0; } }
+  .serie__cadena, .serie__temporadas, .serie__estatus {
+    justify-self: center;
+    align-self: center; }
+    @media screen and (max-width: 63rem) {
+      .serie__cadena, .serie__temporadas, .serie__estatus {
+        background-color: #424242;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
+  @media screen and (max-width: 63rem) {
+    .serie__cadena {
+      border-radius: 5px 5px 0 0; } }
+  @media screen and (max-width: 63rem) {
+    .serie__estatus {
+      border-radius: 0 0 5px 5px; } }
+  .serie__sinopsis a {
+    color: #e91e63;
+    text-decoration: none; }
+    .serie__sinopsis a:hover {
+      text-decoration: underline; }
+  .serie__sinopsis p {
+    line-height: 1.5; }
+  @media screen and (max-width: 63rem) {
+    .serie__sinopsis {
+      margin-top: 1rem; } }
+  .serie__info {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #eee; }
+    @media screen and (min-width: 64rem) {
+      .serie__info {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 9fr;
+        grid-column-gap: 2rem; } }
+
+.paginacion__menu {
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+  .paginacion__menu__item {
+    display: inline-block;
+    margin: 0 .5rem; }
+    .paginacion__menu__item__link {
+      display: block;
+      padding: .5rem 1rem;
+      border-radius: 3px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #424242;
+      color: #eee; }
+      .paginacion__menu__item__link:hover {
+        background-color: #757575; }
+      .paginacion__menu__item__link.inactivo {
+        background-color: #c2c2c2; }
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+$font-header: 'Roboto Slab', serif;
+$font-basica: Helvetica, Arial, sans-serif;
+$color-blanco: #fff;
+$color-destacado: #e91e63;
+$color-gris-oscuro: #424242;
+$color-gris-claro: #eee;
+$bk1: 64rem;
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    padding: 3rem 0;
+    text-align: center;
+    background-image: url('../img/header.jpeg');
+    margin-bottom: 3rem;
+    &__titulo {
+        display: inline-block;
+        padding: 2rem 4rem;
+        font-family: $font-header;
+        border-radius: 10px;
+        background-color: rgba($color-blanco, .8);
+        color: $color-destacado;
+    }
+}
+
+.contenedor {
+    margin: 2rem auto;
+    font-family: $font-basica;
+    @media screen and (min-width: $bk1) {
+        width: 75%;
+    }
+    @media screen and (max-width: $bk1 - 1) {
+        width: 90%;
+    }
+}
+
+.serie {
+    margin-bottom: 3rem;
+    &__imagen {
+        text-align: center;
+        &__imagen {
+            max-width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+    &__titulo {
+        // margin-top: -10px;
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: $color-gris-oscuro;
+        color: $color-gris-claro;
+        border-radius: 0 0 10px 10px;
+        &__titulo {
+            text-transform: uppercase;
+        }
+    }
+    &__esquema-info {
+        @media screen and (min-width: $bk1) {
+            display: flex;
+        }
+        &__item {
+            @media screen and (min-width: $bk1) {
+                flex: auto;
+                margin-right: 1rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            @media screen and (max-width: $bk1 - 1) {
+                margin-bottom: .5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            padding: .5rem;
+            text-align: center;
+            border-radius: 3px;
+            background-color: $color-gris-oscuro;
+            color: $color-gris-claro;
+        }
+    }
+    &__cadena,
+    &__temporadas,
+    &__estatus {
+        justify-self: center;
+        align-self: center;
+        @media screen and (max-width: $bk1 - 1) {
+            background-color: $color-gris-oscuro;
+            color: $color-blanco;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid rgba($color-blanco, .1);
+        }
+    }
+    &__cadena {
+        @media screen and (max-width: $bk1 - 1) {
+            border-radius: 5px 5px 0 0;
+        }
+    }
+    &__estatus {
+        @media screen and (max-width: $bk1 - 1) {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+    &__sinopsis {
+        a {
+            color: $color-destacado;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            line-height: 1.5;
+        }
+        @media screen and (max-width: $bk1 - 1) {
+            margin-top: 1rem;
+        }
+    }
+    &__info {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 2px solid lighten($color-gris-oscuro, 60%);
+        border-radius: 5px;
+        background-color: $color-gris-claro;
+        @media screen and (min-width: $bk1) {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 9fr;
+            grid-column-gap: 2rem;
+        }
+    }
+}
+
+.paginacion {
+    &__menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        &__item {
+            display: inline-block;
+            margin: 0 .5rem;
+            &__link {
+                display: block;
+                padding: .5rem 1rem;
+                border-radius: 3px;
+                font-weight: bold;
+                text-decoration: none;
+                background-color: $color-gris-oscuro;
+                color: $color-gris-claro;
+                &:hover {
+                    background-color: lighten($color-gris-oscuro, 20%);
+                }
+                &.inactivo {
+                    background-color: lighten($color-gris-oscuro, 50%);
+                }
+            }
+        }
+    }
+}
