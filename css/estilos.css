@@ -109,10 +109,10 @@
   list-style: none; }
   .paginacion__menu__item {
     display: inline-block;
-    margin: 0 .5rem; }
+    margin: 0 .3rem; }
     .paginacion__menu__item__link {
       display: block;
-      padding: .5rem 1rem;
+      padding: .4rem .8rem;
       border-radius: 3px;
       font-weight: bold;
       text-decoration: none;
@@ -122,5 +122,7 @@
         background-color: #757575; }
       .paginacion__menu__item__link.inactivo {
         background-color: #c2c2c2; }
+      .paginacion__menu__item__link.activo {
+        background-color: #e91e63; }
 
 /*# sourceMappingURL=estilos.css.map */
