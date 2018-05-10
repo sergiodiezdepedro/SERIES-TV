@@ -34,6 +34,7 @@
   .serie__imagen {
     text-align: center; }
     .serie__imagen__imagen {
+      display: block;
       max-width: 100%;
       border-radius: 5px 5px 0 0; }
   .serie__titulo {

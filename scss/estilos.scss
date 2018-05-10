@@ -45,6 +45,7 @@ $bk1: 64rem;
     &__imagen {
         text-align: center;
         &__imagen {
+            display: block;
             max-width: 100%;
             border-radius: 5px 5px 0 0;
         }
